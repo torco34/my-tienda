@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import "../assets/scss/Login.scss";
-import { Link } from "react-router-dom";
+
 import logo from "../assets/img/losos.svg";
 const Login = () => {
   const form = useRef(null);
@@ -20,9 +20,7 @@ const Login = () => {
           <img src={logo} alt="logo" className="logo" />
 
           <form action="/" className="form" ref={form}>
-            <label for="email" className="label">
-              Email address
-            </label>
+            <label className="label">Email address</label>
             <input
               type="text"
               name="email"
@@ -30,9 +28,7 @@ const Login = () => {
               className="input input-email"
             />
 
-            <label for="password" className="label">
-              Password
-            </label>
+            <label className="label">Password</label>
             <input
               type="password"
               name="password"
