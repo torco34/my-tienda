@@ -1,9 +1,17 @@
 import React from "react";
-
+import { OrderItem } from "../component/OrderItem";
+import "../assets/scss/Orders.scss";
 const Orders = () => {
   return (
     <>
-      <h2>paginas de Orders en PAGES</h2>
+      <div className="Orders">
+        <div className="Orders-container">
+          <h1 className="title">My orders</h1>
+          <div className="Orders-content">
+            <OrderItem />
+          </div>
+        </div>
+      </div>
     </>
   );
 };

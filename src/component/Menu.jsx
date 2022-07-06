@@ -1,5 +1,5 @@
 import React from "react";
-import "../scss/Menu.scss";
+import "../assets/scss/Menu.scss";
 const Menu = () => {
   return (
     <>
@@ -18,7 +18,6 @@ const Menu = () => {
           </li>
         </ul>
       </div>
-      ); } export default Menu;
     </>
   );
 };

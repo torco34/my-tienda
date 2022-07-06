@@ -1,5 +1,5 @@
 import React from "react";
-import "../scss/ChecKout.scss";
+import "../assets/scss/ChecKout.scss";
 const Checkout = () => {
   return (
     <>

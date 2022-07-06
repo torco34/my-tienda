@@ -1,30 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../scss/RecoveryPassword.scss";
+import "../assets/scss/RecoveryPassword.scss";
 const RecoveryPassword = () => {
   return (
     <>
-      <ul>
-        <Link to="/">
-          <p className="active"> Home</p>
-        </Link>
-        <Link to="/Login">
-          <p> Layout</p>
-        </Link>
-        <Link to="/RecoveryPassword">
-          <p>RecoveryPassword</p>
-        </Link>
-        <Link to="/Interviews">
-          <p>Interviews</p>
-        </Link>
-        <Link to="/Podcast">
-          <p>Podcast</p>
-        </Link>
-        <Link to="/Contact">
-          <p>Contact</p>
-        </Link>
-      </ul>
-
       <div className="login">
         <div className="form-container">
           <img src="./logos/logo_yard_sale.svg" alt="logo" className="logo" />

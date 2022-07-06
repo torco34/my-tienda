@@ -7,9 +7,10 @@ nav {
 .menu {
   display: none;
 }
-.logo {
+.nav-logo {
   width: 100px;
-  border: 1px solid rgb(43, 192, 20);
+  height: 60px;
+  border: 1px solid #15133c;
 }
 .navbar-left ul,
 .navbar-right ul {
@@ -47,15 +48,19 @@ nav {
 .navbar-shopping-cart {
   position: relative;
 }
+.navbar-shopping-cart img {
+  position: relative;
+  width: 50px;
+}
 .navbar-shopping-cart div {
   width: 16px;
   height: 16px;
-  background-color: var(--hospital-green);
+  background-color: var(--color-yellow);
   border-radius: 50%;
   font-size: var(--sm);
   font-weight: bold;
   position: absolute;
-  top: -6px;
+  top: 10px;
   right: -3px;
   display: flex;
   justify-content: center;
