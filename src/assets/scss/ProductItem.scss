@@ -24,9 +24,9 @@
 .product-info figure div {
   width: 16px;
   height: 16px;
-  background-color: var(--color-yellow);
+  // background-color: var(--color-yellow);
   border-radius: 50%;
-  font-size: var(--sm);
+  // font-size: var(--sm);
   font-weight: bold;
   position: relative;
   top: -30px;
@@ -43,20 +43,20 @@
   margin-bottom: 4px;
 }
 .product-info div p:nth-child(2) {
-  font-size: var(--sm);
+  // font-size: var(--sm);
   margin-top: 0;
   margin-bottom: 0;
   color: var(--very-light-pink);
 }
-@media (max-width: 640px) {
-  .cards-container {
-    grid-template-columns: repeat(auto-fill, 140px);
-  }
-  .ProductItem {
-    width: 140px;
-  }
-  .ProductItem img {
-    width: 140px;
-    height: 140px;
-  }
-}
+// @media (max-width: 640px) {
+//   .cards-container {
+//     grid-template-columns: repeat(auto-fill, 140px);
+//   }
+//   .ProductItem {
+//     width: 140px;
+//   }
+//   .ProductItem img {
+//     width: 140px;
+//     height: 140px;
+//   }
+// }

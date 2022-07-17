@@ -1,5 +1,6 @@
 import React from "react";
-import "../scss/MyOrder";
+import "../assets/scss/MyOrder.scss";
+import { OrderItem } from "../component/OrderItem";
 const MyOrder = () => {
   return (
     <>

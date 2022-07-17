@@ -3,6 +3,7 @@ import { ProductItem } from "../component/ProductItem";
 import "../assets/scss/ProductList.scss";
 import { UseGetProduct } from "../hooks/useGetProduct";
 const API = "http://api.escuelajs.co/api/v1/products";
+
 const ProductList = () => {
   const products = UseGetProduct(API);
   return (
