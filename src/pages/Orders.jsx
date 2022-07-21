@@ -6,7 +6,7 @@ const Orders = () => {
     <>
       <div className="Orders">
         <div className="Orders-container">
-          <h1 className="title">My orders</h1>
+          <h1 className="title">My orders [PEGES]</h1>
           <div className="Orders-content">
             <OrderItem />
           </div>

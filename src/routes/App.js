@@ -25,7 +25,6 @@ function App() {
         <Layout>
           <Routes>
             <Route path="/" element={<Home />}></Route>
-            <Route path="/Login" element={<Login />}></Route>
 
             <Route
               path="/PasswordRecovery"
@@ -41,7 +40,7 @@ function App() {
             ></Route>
             <Route path="/checkout" element={<Checkout />}></Route>
             <Route path="/Orders" element={<Orders />}></Route>
-
+            <Route path="/Login" element={<Login />}></Route>
             <Route path="*" element={<NotFund />}></Route>
           </Routes>
         </Layout>

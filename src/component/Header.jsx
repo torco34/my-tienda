@@ -13,9 +13,10 @@ const Header = () => {
   const [toggle, setToggle] = useState(false);
   const [toggleOrders, setToggleOrden] = useState(false);
   const { state } = useContext(AppContext);
-  const handleToggle = () => {
+  const handleToggle = (e) => {
     setToggle(!toggle);
     console.log("...Hola Mundo");
+    e.preventDefault();
   };
 
   return (
@@ -28,19 +29,19 @@ const Header = () => {
 
           <ul>
             <Link to="/">All</Link>
-            <Link to="/Login">Layout</Link>
+            <Link to="/drs">Layout</Link>
             <Link to="/RecoveryPassword">Clothes</Link>
             <Link to="/Checkout">Checkout</Link>
             <Link to="/createAccount">CreateAccont</Link>
             <Link to="/">Toys</Link>
-            <Link to="/Contact">Others</Link>
+            <Link to="/login">Contact</Link>
           </ul>
         </div>
 
         <div className="navbar-right">
           <ul>
             <li className="navbar-email" onClick={handleToggle}>
-              platzi@example.com
+              iniciar sesion
             </li>
             <li
               className="navbar-shopping-cart"

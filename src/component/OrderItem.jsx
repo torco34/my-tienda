@@ -9,7 +9,7 @@ const OrderItem = ({ product }) => {
   };
   return (
     <>
-      <div className="OrderItem">
+      <div className="OrderItem border">
         <figure>
           <img src={product.images[0]} alt={product.title} />
         </figure>

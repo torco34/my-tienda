@@ -1,15 +1,20 @@
-import React from "react";
-import flech from "../assets/img/flecha.png";
-const Order = () => {
+import React, { useContext } from "react";
+import cerrar from "../assets/img/cerrar.png";
+import { AppContext } from "../context/AppContext";
+const Order = ({ product }) => {
+  const { removerFromCart } = useContext(AppContext);
+  const handleRemove = (product) => {
+    removerFromCart(product);
+  };
   return (
     <>
-      <div className="Order">
-        <p>
-          <span>03.25.21</span>
-          <span>6 articles</span>
-        </p>
-        <p>$560.00</p>
-        <img src={flech} alt="arrow" />
+      <div className="OrderItem border">
+        <figure>
+          <img src={product.images[0]} alt={product.title} />
+        </figure>
+        <p>{product.title}</p>
+        <p>${product.price}</p>
+        <img src={cerrar} onClick={() => handleRemove(product)} alt="fle" />
       </div>
     </>
   );

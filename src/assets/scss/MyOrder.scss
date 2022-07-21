@@ -1,5 +1,5 @@
 .MyOrder {
-  width: 460;
+  width: 30%;
   padding: 30px;
   box-sizing: border-box;
   position: absolute;
@@ -84,8 +84,15 @@
 }
 .shopping-cart p:nth-child(2) {
   color: var(--very-light-pink);
+  background-color: aquamarine;
 }
 .shopping-cart p:nth-child(3) {
   font-size: var(--md);
   font-weight: bold;
+}
+@media (max-width: 640px) {
+  .MyOrder {
+    width: 50%;
+    padding: 30px;
+  }
 }

@@ -1,29 +1,43 @@
 import React from "react";
 import "../assets/scss/ChecKout.scss";
-const Checkout = () => {
+import { AppContext } from "../context/AppContext";
+import { useContext } from "react";
+import { Order } from "../component/Order";
+import cerrar from "../assets/img/cerrar.png";
+const Checkout = (props) => {
+  const { state } = useContext(AppContext);
+
+  const sumTotal = () => {
+    const reducer = (accumalator, currentValue) =>
+      accumalator + currentValue.price;
+    const sum = state.cart.reduce(reducer, 0);
+    return sum;
+  };
+
   return (
     <>
-      <div className="checkout">
-        <div className="checkout-container">
-          <h1 className="title">My Order</h1>
-          <div className="Checkout-content">
+      <div className="container-flad ">
+        <div className="imgOpen">
+          <img src={cerrar} onClick={props.handleRemove} alt="fle" />
+        </div>
+        <div className="col-3  checkout-container">
+          <div className="">
+            <h2 className="title">My Order</h2>
+          </div>
+        </div>
+        <div className="col-5">
+          <div className="">
+            {state.cart.map((product) => (
+              <Order product={product} key={product.id} />
+            ))}
+
             <div className="order">
               <p>
-                <span>03.25.21</span>
-                <span>2 articles</span>
+                <span>Total</span>
               </p>
-              <p>$56000</p>
+              <p>${sumTotal()}</p>
             </div>
-            <div className="shopping-cart">
-              <figure>
-                <img
-                  src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                  alt="bike"
-                />
-              </figure>
-              <p>Bike</p>
-              <p>$30,00</p>
-            </div>
+            <button className="primary-button">Checkout</button>
           </div>
         </div>
       </div>

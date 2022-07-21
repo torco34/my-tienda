@@ -13,6 +13,7 @@ const ProductItem = ({ product }) => {
   return (
     <>
       <div className="ProductItem">
+        product iten
         <img src={product.images[0]} alt={product.title} />
         <div className="product-info">
           <div className="OrderItem">
@@ -21,7 +22,7 @@ const ProductItem = ({ product }) => {
           </div>
           <figure onClick={() => handleClick(product)}>
             <img src={carToAddImg} alt="imagen" />
-            <div>+</div>
+            {/* <div>+</div> */}
           </figure>
         </div>
       </div>
