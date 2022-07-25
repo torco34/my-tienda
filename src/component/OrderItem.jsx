@@ -2,10 +2,10 @@ import React, { useContext } from "react";
 import "../assets/scss/OrderItem.scss";
 import cerrar from "../assets/img/cerrar.png";
 import { AppContext } from "../context/AppContext";
-const OrderItem = ({ product }) => {
+const OrderItem = ({ product, indexValue }) => {
   const { removerFromCart } = useContext(AppContext);
-  const handleRemove = (product) => {
-    removerFromCart(product);
+  const handleRemove = (index) => {
+    removerFromCart(index);
   };
   return (
     <>
@@ -15,7 +15,7 @@ const OrderItem = ({ product }) => {
         </figure>
         <p>{product.title}</p>
         <p>${product.price}</p>
-        <img src={cerrar} onClick={() => handleRemove(product)} alt="fle" />
+        <img src={cerrar} onClick={() => handleRemove(indexValue)} alt="fle" />
       </div>
     </>
   );

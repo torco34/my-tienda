@@ -8,6 +8,7 @@ import { MyOrder } from "../containers/MyOrder";
 import { AppContext } from "../context/AppContext";
 
 import carrito from "../assets/img/carrito.jpeg";
+import { Input } from "./Input";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
@@ -31,10 +32,11 @@ const Header = () => {
             <Link to="/">All</Link>
             <Link to="/drs">Layout</Link>
             <Link to="/RecoveryPassword">Clothes</Link>
-            <Link to="/Checkout">Checkout</Link>
+            <Link to="/no">Checkout</Link>
             <Link to="/createAccount">CreateAccont</Link>
-            <Link to="/">Toys</Link>
+            <Link to="/cv">Toys</Link>
             <Link to="/login">Contact</Link>
+            <Input />
           </ul>
         </div>
 
@@ -52,6 +54,7 @@ const Header = () => {
             </li>
           </ul>
         </div>
+
         {toggle && <Menu />}
         {toggleOrders && <MyOrder />}
       </nav>
