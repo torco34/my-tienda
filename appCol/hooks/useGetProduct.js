@@ -5,6 +5,15 @@ const UseGetProduct = (API) => {
 
   useEffect(async () => {
     const response = await axios(API);
+    console.log(response);
+    if (response.status === 200) {
+      const { info, results } = response.data;
+      // setCharacters(results);
+      // setTotalResults(info.count);
+      // setPages(info.pages);
+      // setPrevPages(info.prev);
+      // setNextPages(info.next);
+    }
 
     setProducts(response.data);
   }, []);
