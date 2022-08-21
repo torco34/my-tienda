@@ -12,7 +12,7 @@ import { Home } from "../container/Home";
 // import { Checkout } from "../pages/ChecKout";
 // import { Orders } from "../pages/Orders";
 // import { RecoveryPassword } from "../containers/RecoveryPassword";
-// import { NotFund } from "../pages/NotFund";
+import { NotFund } from "../container/NotFund.jsx";
 // import { AppContext } from "../context/AppContext";
 // import { useInitialState } from "../hooks/useInicialState";
 
@@ -39,7 +39,7 @@ function App() {
             <Route path="/checkout" element={<Checkout />}></Route>
             <Route path="/Orders" element={<Orders />}></Route>
             <Route path="/Login" element={<Login />}></Route> */}
-          {/* <Route path="*" element={<NotFund />}></Route> */}
+          <Route path="*" element={<NotFund />}></Route>
         </Routes>
       </Layout>
     </Router>

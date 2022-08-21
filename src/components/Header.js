@@ -15,7 +15,7 @@ const Header = () => {
           <ul>
             <Link to="/">Todo</Link>
             <Link to="/ropa">Ropa</Link>
-            <Link to="/#">Acesorios</Link>
+            <Link to="/ace">Acesorios</Link>
             <Link to="/no">Calzados</Link>
             <Link to="/createAccount">Reloj</Link>
             <Link to="/cv">Muebles</Link>
