@@ -14,7 +14,6 @@ nav {
 .nav-logo {
   width: 100px;
   height: 60px;
-  border: 1px solid #15133c;
 }
 .navbar-left ul,
 .navbar-right ul {
@@ -23,6 +22,8 @@ nav {
   margin: 0;
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 100%;
   height: 60px;
 }
 .navbar-left {
@@ -38,10 +39,14 @@ nav {
   border: 1px solid var(--white);
   padding: 8px;
   border-radius: 8px;
+  margin-left: 20px;
+  font-size: 20px;
+  width: 10%;
+  text-align: center;
 }
 .navbar-left a:hover,
 .navbar-right a:hover {
-  border: 1px solid var(--hospital-green);
+  border: 2px solid var(--hospital-green);
   color: var(--hospital-green);
 }
 .navbar-email {
@@ -52,6 +57,7 @@ nav {
 }
 .navbar-shopping-cart {
   position: relative;
+  // display: none;
 }
 .navbar-shopping-cart img {
   position: relative;
@@ -80,6 +86,10 @@ nav {
     display: none;
   }
   .navbar-email {
+    display: none;
+  }
+  .navbar-shopping-cart {
+    position: relative;
     display: none;
   }
 }
