@@ -1,13 +1,13 @@
 import React from "react";
-import { Borrador } from "../components/Borrador";
+import { ContainerApp } from "../components/ContainerApp";
 
-import { UserContext, UseContextProvider } from "../context/useContext";
+import { UseContextProvider } from "../context/useContext";
 
 const Home = () => {
   return (
     <>
       <UseContextProvider>
-        <Borrador />
+        <ContainerApp />
       </UseContextProvider>
     </>
   );
