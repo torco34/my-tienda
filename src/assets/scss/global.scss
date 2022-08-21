@@ -1,0 +1,50 @@
+:root {
+  --white: #fff;
+  --black: #413f42;
+  --very-light-pink: #413f42;
+  --text-input-field: #fff;
+  --hospital-green: #15133c;
+  --color-yellow: #ec994b;
+  --sm: 14px;
+  --md: 16px;
+  --lg: 18px;
+}
+.Menu {
+  width: 200px;
+  // height: auto;
+  border: 1px solid var(--very-light-pink);
+  border-radius: 6px;
+  padding: 20px 20px 0 20px;
+  position: absolute;
+  top: 60px;
+  right: 50px;
+  text-align: center;
+  background-color: var(--white);
+}
+.Menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.Menu ul li {
+  // text-align: end;
+}
+.Menu ul li:nth-child(1),
+.Menu ul li:nth-child(2) {
+  font-weight: bold;
+}
+.Menu ul li:last-child {
+  padding-top: 20px;
+  border-top: 1px solid var(--very-light-pink);
+}
+.Menu ul li:last-child a {
+  color: var(--hospital-green);
+  font-size: var(--sm);
+}
+.Menu ul li a {
+  color: var(--back);
+  text-decoration: none;
+  margin-bottom: 20px;
+  display: inline-block;
+}

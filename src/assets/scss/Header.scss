@@ -6,7 +6,10 @@ nav {
   background-color: var(--text-input-field);
 }
 .menu {
+  position: absolute;
+  top: 15px;
   display: none;
+  right: 20px;
 }
 .nav-logo {
   width: 100px;
