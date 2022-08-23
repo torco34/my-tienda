@@ -14,7 +14,7 @@ const Header = () => {
           <img src={icmenu} alt="menu" className="menu" />
           <ul>
             <Link to="/">Todo</Link>
-            <Link to="/ropa">Ropa</Link>
+            <Link to="/information">Ropa</Link>
             <Link to="/ace">Acesorios</Link>
             <Link to="/no">Calzados</Link>
             <Link to="/createAccount">Reloj</Link>
@@ -26,12 +26,10 @@ const Header = () => {
         <div className="navbar-right">
           <ul>
             <li className="navbar-email">iniciar sesion</li>
-            <li
-              className="navbar-shopping-cart"
-              //   onClick={() => setToggleOrden(!toggleOrders)}
-            >
-              <img src={carrito} alt="shopping cart" />
-              {/* {state.cart.length > 0 ? <div>{state.cart.length}</div> : null} */}
+            <li className="navbar-shopping-cart">
+              <Link to="/checkout">
+                <img src={carrito} alt="shopping cart" />
+              </Link>
             </li>
           </ul>
         </div>
