@@ -1,14 +1,14 @@
 import React from "react";
 import { ContainerApp } from "../components/ContainerApp";
 
-import { UseContextProvider } from "../context/useContext";
+// import { UseContextProvider } from "../context/useContext";
 
 const Home = () => {
   return (
     <>
-      <UseContextProvider>
-        <ContainerApp />
-      </UseContextProvider>
+      {/* <UseContextProvider> */}
+      <ContainerApp />
+      {/* </UseContextProvider> */}
     </>
   );
 };

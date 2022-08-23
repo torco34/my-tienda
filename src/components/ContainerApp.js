@@ -16,7 +16,7 @@ const ContainerApp = () => {
             <>
               <div
                 className=" col-ms-3 col-md-4 col-lg-3 m-3 card p-2"
-                key={caracter.id}
+                key={caracter.toString()}
               >
                 <img
                   src={caracter.images}
