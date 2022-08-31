@@ -1,14 +1,17 @@
 import React from "react";
-import { ContainerApp } from "../components/ContainerApp";
-
-// import { UseContextProvider } from "../context/useContext";
+import { Products } from "../components/Products";
+import inicialstaste from "../inicialstaste";
 
 const Home = () => {
   return (
     <>
-      {/* <UseContextProvider> */}
-      <ContainerApp />
-      {/* </UseContextProvider> */}
+      <div className="container">
+        <div className="row">
+          <div className="col-3">
+            <Products products={inicialstaste.products} />
+          </div>
+        </div>
+      </div>
     </>
   );
 };

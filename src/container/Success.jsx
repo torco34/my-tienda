@@ -1,10 +1,10 @@
 import React from "react";
 
-const Sucess = () => {
+const Success = () => {
   return (
     <>
       <h2>Sucess</h2>
     </>
   );
 };
-export { Sucess };
+export { Success };

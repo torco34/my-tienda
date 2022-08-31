@@ -5,6 +5,9 @@ nav {
   border-bottom: 1px solid var(--very-light-pink);
   background-color: var(--text-input-field);
 }
+
+.navbar-email {
+}
 .menu {
   position: absolute;
   top: 15px;
@@ -31,6 +34,7 @@ nav {
 }
 .navbar-left ul {
   margin-left: 20px;
+  font-size: 10px;
 }
 .navbar-left a,
 .navbar-right a {
@@ -43,6 +47,12 @@ nav {
   font-size: 20px;
   width: 10%;
   text-align: center;
+}
+.navbar-right p {
+  font-size: 15px;
+  width: 100px;
+  padding: 20px;
+  // border: 2px solid rebeccapurple;
 }
 .navbar-left a:hover,
 .navbar-right a:hover {

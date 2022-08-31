@@ -1,5 +1,5 @@
 import React from "react";
-import { UseContextProvider } from "../context/useContext.jsx";
+
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Layout } from "../container/Layout";
 import { Home } from "../container/Home";
@@ -7,10 +7,12 @@ import { NotFund } from "../container/NotFund.jsx";
 import { Information } from "../container/Information";
 import { ChecKout } from "../container/ChecKout";
 import { Payment } from "../container/Payment";
+import { AppContext } from "../context/AppContex";
+import { UseInitialState } from "../hooks/UseInitialState";
 function App() {
-  // const Provaider = UseContextProvider
+  const initialState = UseInitialState();
   return (
-    <UseContextProvider>
+    <AppContext.Provider value={initialState}>
       <Router>
         <Layout>
           <Routes>
@@ -22,7 +24,7 @@ function App() {
           </Routes>
         </Layout>
       </Router>
-    </UseContextProvider>
+    </AppContext.Provider>
   );
 }
 

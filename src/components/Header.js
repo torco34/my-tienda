@@ -1,20 +1,22 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import icmenu from "../assets/img/icon_menu.svg";
 import logo from "../assets/img/logo.jpg";
-import carrito from "../assets/img/carrito.jpeg";
-import "../assets/scss/Header.scss";
 
+import "../assets/scss/Header.scss";
+import { AppContext } from "../context/AppContex";
 const Header = () => {
+  const { state } = useContext(AppContext);
+  const { cart } = state;
   return (
     <>
-      <nav>
+      <nav className="container">
         <img src={logo} alt="logo" className="nav-logo" />
         <div className="container navbar-left">
           <img src={icmenu} alt="menu" className="menu" />
           <ul>
             <Link to="/">Todo</Link>
-            <Link to="/information">Ropa</Link>
+            <Link to="/informatio">Ropa</Link>
             <Link to="/ace">Acesorios</Link>
             <Link to="/no">Calzados</Link>
             <Link to="/createAccount">Reloj</Link>
@@ -25,11 +27,14 @@ const Header = () => {
 
         <div className="navbar-right">
           <ul>
-            <li className="navbar-email">iniciar sesion</li>
+            <p className="navbar-email">iniciar section</p>
             <li className="navbar-shopping-cart">
               <Link to="/checkout">
-                <img src={carrito} alt="shopping cart" />
+                <i className="fas fa-shopping-basket" />
               </Link>
+              {cart.length > 0 && (
+                <div className="header-alert">{cart.length}</div>
+              )}
             </li>
           </ul>
         </div>

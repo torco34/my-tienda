@@ -69,8 +69,10 @@ input {
   width: 100%;
   box-sizing: border-box;
 }
-.Information-buttons {
+.Information-buttons a {
   margin: 10px 0 0;
+  color: #fff;
+  text-decoration: none;
 }
 .Information button {
   box-shadow: inset 0px 1px 0px 0px #bee2f9;
