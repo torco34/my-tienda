@@ -10,18 +10,14 @@ const Products = () => {
     console.log("hola mundo");
   };
   return (
-    <div className="Products-items ">
-      <div className="row">
-        <div className="Product-item">
-          {products.map((product) => (
-            <Product
-              key={product.id}
-              product={product}
-              handleAddToCart={handleAddToCart}
-            />
-          ))}
-        </div>
-      </div>
+    <div className="product-item ">
+      {products.map((product) => (
+        <Product
+          key={product.id}
+          product={product}
+          handleAddToCart={handleAddToCart}
+        />
+      ))}
     </div>
   );
 };

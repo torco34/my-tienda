@@ -1,33 +1,51 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-// import "../assets/scss/ChecKout.scs";
+import { ItemChecKout } from "../components/ItemChecKout";
+import { AppContext } from "../context/AppContex";
 const ChecKout = () => {
+  const { state, removeFromCart } = useContext(AppContext);
+  const { cart } = state;
+  const handleRemove = (product) => () => {
+    removeFromCart(product);
+  };
+  const handleSumTotal = () => {
+    const reducer = (accumulator, currentValue) =>
+      accumulator + currentValue.price;
+    const sum = cart.reduce(reducer, 0);
+    return sum;
+
+    console.log("hola soy borrador");
+  };
   return (
     <>
       <div className="container  alert alert-success  ">
         <div className="row">
-          <div className="col-6">
+          <div className="checkout-container">
             <div className="text-center ">
-              <h3>Lista de pedidos</h3>
+              {cart.length > 0 ? (
+                <h3>Lista de pedidos</h3>
+              ) : (
+                <h3>Sin pedido</h3>
+              )}
 
-              <h4>item name</h4>
-            </div>
-          </div>
-          <div className="col-6  text-center">
-            <div className="">
-              <h3>Precio Total: $200</h3>
-              <span>$10</span>
-
-              <button type="button" className="btn btn-success m-4 ">
-                <i className="fas fa-trash-alt " />
-              </button>
-
-              <Link to="/information">
-                <button type="button" className="btn btn-success ">
-                  continuar pedido
-                </button>
-                s
-              </Link>
+              {cart.map((item) => (
+                <ItemChecKout
+                  key={item.id}
+                  title={item.title}
+                  price={item.price}
+                  handleRemove={handleRemove(item)}
+                />
+              ))}
+              {cart.length > 0 && (
+                <div>
+                  <h4>`Precio Total $ ${handleSumTotal()}`</h4>
+                  <Link to="/information">
+                    <button type="button" className="btn btn-success ">
+                      continuar pedido
+                    </button>
+                  </Link>
+                </div>
+              )}
             </div>
           </div>
         </div>

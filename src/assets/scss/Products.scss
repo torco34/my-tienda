@@ -1,60 +1,22 @@
-.contApi-item {
+.product-item {
   display: grid;
-  grid-template-columns: auto 3fr auto auto;
-  gap: 16px;
-  margin-bottom: 24px;
-  padding: 20px;
-  align-items: center;
-  border: 2px solid wheat;
-  margin-top: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(500px, auto);
 }
-.contApi-item img {
+.product-item img {
   width: 100%;
-  height: 200px;
+  height: 20vh;
+  object-fit: cover;
   border-radius: 5px 5px 0 0;
   object-fit: contain;
+  padding: 10px;
 }
-// .Products-item {
-//   text-decoration: none;
-//   box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06),
-//     1px 3px 8px rgba(39, 44, 49, 0.03);
-//   border-radius: 5px;
-//   margin: 0 0 20px 0;
-//   position: relative;
-// }
-// .Products-item-info {
-//   padding: 10px;
-// }
-// .Products-item-info h2 {
-//   font-size: 18px;
-//   font-weight: bold;
-//   display: flex;
-//   justify-content: space-between;
-// }
-// .Products-item-info h2 span {
-//   color: #33b13a;
-// }
-// .Products-item-info p {
-//   font-size: 14px;
-//   font-weight: 300;
-// }
-// .Products-item img {
-//   width: 100%;
-//   height: 200px;
-//   border-radius: 5px 5px 0 0;
-//   object-fit: contain;
-// }
-// .Products-item button {
-//   background: linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
-//   width: 100%;
-//   padding: 10px;
-//   border-radius: 0px 0px 5px 5px;
-//   border: 0px;
-//   outline: 0;
-//   cursor: pointer;
-//   font-size: 14px;
-//   font-weight: 300;
-// }
-// .Products-item button:hover {
-//   background-color: rgba(39, 44, 49, 0.06);
-// }
+.cardProduc {
+  grid-column: 1 / 3;
+  grid-row: 1;
+  text-align: center;
+  width: 400px;
+  height: 47vh;
+  // border: solid red 3px;
+}
