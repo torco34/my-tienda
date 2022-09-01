@@ -16,10 +16,15 @@ const UseInitialState = () => {
       cart: state.cart.filter((items) => items.id != payload.id),
     });
   };
+  const addToBuyer = (payload) => ({
+    ...state,
+    buyer: [...state.buyer, payload],
+  });
 
   return {
     addTocart,
     removeFromCart,
+    addToBuyer,
     state,
   };
 };
