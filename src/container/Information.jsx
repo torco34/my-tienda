@@ -1,11 +1,13 @@
 import React, { useRef, useContext } from "react";
 import "../assets/scss/Informacion.scss";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AppContext } from "../context/AppContex";
 const Information = () => {
   const { state, addToBuyer } = useContext(AppContext);
   const form = useRef(null);
+  const navigate = useNavigate();
   const { cart } = state;
+  console.log(navigate);
   const handleSubmit = () => {
     const formData = new FormData(form.current);
     const buyer = {
@@ -20,6 +22,7 @@ const Information = () => {
       phone: formData.get("phone"),
     };
     addToBuyer(buyer);
+    navigate("/payment");
   };
   return (
     <>
@@ -49,7 +52,7 @@ const Information = () => {
             <div className="btn btn-success">
               <Link to="/checkout">Regresar</Link>
             </div>
-            <div className="btn btn-success">
+            <div className="">
               <button type="buton" onClick={handleSubmit}>
                 Pagar
               </button>

@@ -27,7 +27,7 @@ const ChecKout = () => {
               {cart.length > 0 ? (
                 <h3>Lista de pedidos</h3>
               ) : (
-                <h3>Sin pedido(:</h3>
+                <h3>Sin pedido</h3>
               )}
               {cart.map((item) => (
                 <ItemChecKout
