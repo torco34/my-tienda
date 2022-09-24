@@ -8,14 +8,6 @@ const Payment = () => {
   const { state } = useContext(AppContext);
   const { cart } = state;
   const [paidFor, setPaidFor] = useState(false);
-  // const handleApprove = (orderID) => {
-  //   setPaidFor(true);
-  // };
-
-  // const history = useNavigate();
-  // if (paidFor) {
-  //   history("/success");
-  // }
 
   const handleSumTotal = () => {
     const reducer = (accumulator, currentValue) =>
@@ -44,6 +36,7 @@ const Payment = () => {
           )}
           <div className="Payment-button ">
             <App />
+            Este es mi boton....
           </div>
         </div>
         <div />
