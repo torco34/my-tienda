@@ -3,7 +3,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Layout } from "../container/Layout";
 import { Home } from "../container/Home";
-import { NotFund } from "../container/NotFund.jsx";
+// import { NotFund } from "../container/NotFund.jsx";
 import { Information } from "../container/Information";
 import { ChecKout } from "../container/ChecKout";
 import { Payment } from "../container/Payment";
