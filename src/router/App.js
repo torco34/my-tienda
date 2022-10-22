@@ -23,7 +23,6 @@ function App() {
             <Route path="/checkout" element={<ChecKout />}></Route>
             <Route path="/payment" element={<Payment />}></Route>
             <Route path="/ropaHombre" element={<RopaHombre />}></Route>
-            {/* <Route path="*" element={<NotFund />}></Route> */}
           </Routes>
         </Layout>
       </Router>
