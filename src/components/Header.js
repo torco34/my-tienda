@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import icmenu from "../assets/img/icon_menu.svg";
-import logo from "../assets/img/logo.jpg";
+// import icmenu from "../assets/img/icon_menu.svg";
+// import logo from "../assets/img/logo.jpg";
 
 import "../assets/scss/Header.scss";
 import { AppContext } from "../context/AppContex";
@@ -11,9 +11,9 @@ const Header = () => {
   return (
     <>
       <nav className="container">
-        <img src={logo} alt="logo" className="nav-logo" />
+        {/* <img src={logo} alt="logo" className="" /> */}
         <div className="container navbar-left">
-          <img src={icmenu} alt="menu" className="menu" />
+          {/* <img src={icmenu} alt="menu" className="menu" /> */}
           <ul>
             <Link to="/home">Todo</Link>
             <Link to="/ropaHombre">Ropa</Link>
