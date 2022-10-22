@@ -15,8 +15,8 @@ const Header = () => {
         <div className="container navbar-left">
           <img src={icmenu} alt="menu" className="menu" />
           <ul>
-            <Link to="/">Todo</Link>
-            <Link to="/informatio">Ropa</Link>
+            <Link to="/home">Todo</Link>
+            <Link to="/ropaHombre">Ropa</Link>
             <Link to="/ace">Acesorios</Link>
             <Link to="/no">Calzados</Link>
             <Link to="/createAccount">Reloj</Link>
