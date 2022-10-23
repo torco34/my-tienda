@@ -11,13 +11,15 @@ const Products = () => {
   };
   return (
     <div className="product-item ">
-      {products.map((product) => (
-        <Product
-          key={product.id}
-          product={product}
-          handleAddToCart={handleAddToCart}
-        />
-      ))}
+      <div className="gridItem">
+        {products.map((product) => (
+          <Product
+            key={product.id}
+            product={product}
+            handleAddToCart={handleAddToCart}
+          />
+        ))}
+      </div>
     </div>
   );
 };

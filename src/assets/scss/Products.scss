@@ -1,10 +1,30 @@
-.product-item {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: minmax(500px, auto);
+.cardProduc {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  border: solid 2px rgb(32, 209, 117);
 }
+.cardProduc {
+  // display: flex;
+  // width: 100%;
+  // display: grid;
+  // grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  // border: solid 2px rgb(32, 209, 117);
+}
+.produc1 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  padding: 10px;
+  // border: solid 2px rgb(152, 166, 243);
+}
+
 .product-item img {
+  // display: grid;
+  // grid-template-columns: repeat(auto-fill, minmax(70rem, 1fr));
   width: 100%;
   height: 20vh;
   object-fit: cover;
@@ -12,10 +32,64 @@
   object-fit: contain;
   padding: 10px;
 }
-.cardProduc {
-  grid-column: 1 / 3;
-  grid-row: 1;
-  text-align: center;
-  width: 400px;
-  height: 47vh;
+.gridItem {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+@media (max-width: 640px) {
+  .gridItem {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 30%;
+  }
+  .navbar-left ul {
+    display: none;
+  }
+
+  .navbar-shopping-cart {
+    position: relative;
+  }
+  .cardProduc {
+    width: 250px;
+    // font-size: 1rem;
+    // margin: auto;
+    // padding: 10px;
+  }
+  .cardProduc p {
+    // width: 250px;
+    font-size: 10px;
+    margin: 20px;
+    text-align: center;
+    // margin: auto;
+  }
+  .cardProduc button {
+    width: 150px;
+    margin: auto;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .gridItem {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 30%;
+  }
+  .navbar-left ul {
+    display: none;
+  }
+
+  .navbar-shopping-cart {
+    position: relative;
+  }
+  .cardProduc {
+    width: 320px;
+    font-size: 1rem;
+  }
+  .cardProduc button {
+    width: 150px;
+    margin: auto;
+    font-size: 1rem;
+  }
 }

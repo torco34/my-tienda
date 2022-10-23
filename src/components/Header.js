@@ -5,6 +5,7 @@ import icmenu from "../assets/img/icon_menu.svg";
 
 import "../assets/scss/Header.scss";
 import { AppContext } from "../context/AppContex";
+import { HeaderCelu } from "./HeaderCelu";
 const Header = () => {
   const { state } = useContext(AppContext);
   const { cart } = state;
@@ -42,6 +43,7 @@ const Header = () => {
         {/* {toggle && <Menu />} */}
         {/* {toggleOrders && <MyOrder />} */}
       </nav>
+      <HeaderCelu />
     </>
   );
 };

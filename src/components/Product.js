@@ -2,9 +2,9 @@ import react from "react";
 import "../assets/scss/Products.scss";
 const Product = ({ product, handleAddToCart }) => {
   return (
-    <div className="container">
-      <div className="row ">
-        <div className="cardProduc  card ">
+    <div className="container cardProduc">
+      <div className="produc2">
+        <div className="container produc1 text-center ">
           <img src={product.image} alt={product.title} />
           <h3>{product.title}</h3>
           <p>{product.price}</p>

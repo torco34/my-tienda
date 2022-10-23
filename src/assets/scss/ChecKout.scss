@@ -1,19 +1,22 @@
 .checkout {
-  display: flex;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  // grid-template-columns: repeat(2, 1fr);
+  // grid-gap: 10px;
+  // width: 100%;
+  //   border: solid 2px red;
 }
-.checkout div {
-  grid-column: 1 / 2;
-  grid-row: 1;
-  width: 500px;
-}
+// .checkout div {
+//   grid-column: 1 / 2;
+//   grid-row: 1;
+//   width: 500px;
+//   // border: solid 2px red;
+// }
 
-.itemChecout {
-  display: flex;
-  margin-top: 10px;
-  border-radius: 5px;
-  padding: 5px;
-  border: solid 1px green;
-}
+// .itemChecout {
+//   display: flex;
+//   margin-top: 10px;
+//   border-radius: 5px;
+//   padding: 5px;
+//   // border: solid 1px green;
+// }

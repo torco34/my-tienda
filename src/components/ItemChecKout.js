@@ -6,8 +6,8 @@ const ItemChecKout = ({ title, price, handleRemove }) => {
 
   return (
     <>
-      <div className="itemChecout  ">
-        <div className="card text-center">
+      <div className="itemChecout">
+        <div className=" text-center">
           <h3>{title}</h3>
           <span>${price}</span>
         </div>

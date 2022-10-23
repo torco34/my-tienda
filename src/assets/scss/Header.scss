@@ -1,14 +1,14 @@
 nav {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  // border: solid 1px rgb(0, 255, 4);
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 80px;
+  border: 1px solid #cccc;
 }
 .navbar-left ul {
   display: flex;
-  // border: solid 1px rgb(0, 255, 4);
 }
 
 .navbar-left a {
@@ -20,7 +20,9 @@ nav {
   font-weight: bold;
 }
 .menu {
-  display: none;
+  position: absolute;
+  right: 10px;
+  // display: none;
 }
 .navbar-right li {
   display: flex;
@@ -38,19 +40,32 @@ nav {
   // width: 100px;
   // height: 60px;
 }
+.navbar-shopping-cart {
+  position: relative;
 
+  width: 30px;
+}
 @media (max-width: 640px) {
   .menu {
-    // display: block;
+    display: block;
   }
   .navbar-left ul {
-    // display: none;
+    display: none;
   }
   .navbar-email {
+    display: none;
+  }
+
+  .navbar-shopping-cart {
+    position: relative;
+    right: 150px;
+    margin-top: 13px;
+
     // display: none;
   }
-  .navbar-shopping-cart {
-    // position: relative;
-    // display: none;
+  nav {
+    height: 50px;
+    width: 1000px;
+    background-color: aquamarine;
   }
 }
