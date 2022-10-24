@@ -1,14 +1,27 @@
 .navbar-celular {
   position: relative;
-  top: 00px;
-  background-color: cadetblue;
-  //   z-index: 0;
-  //   top: 30px;
+  height: 40vh;
+  width: 100%;
+  // display: none;
 }
 
 .navbar-celular ul {
-  height: 50vh;
-  width: 100%;
-  position: relative;
-  z-index: 5;
+  align-content: center;
+  justify-items: center;
+}
+.navbar-celular a {
+  display: block;
+  text-decoration: none;
+  color: darkslategrey;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+@media (max-width: 640px) {
+  .navbar-celular {
+    position: relative;
+    height: 40vh;
+    width: 50%;
+    // border: solid 1px red;
+  }
 }

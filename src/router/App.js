@@ -10,6 +10,7 @@ import { Payment } from "../container/Payment";
 import { AppContext } from "../context/AppContex";
 import { RopaHombre } from "../container/RopaHombre";
 import { UseInitialState } from "../hooks/UseInitialState";
+import { HeaderCelu } from "../components/HeaderCelu";
 
 function App() {
   const initialState = UseInitialState();
@@ -23,6 +24,7 @@ function App() {
             <Route path="/checkout" element={<ChecKout />}></Route>
             <Route path="/payment" element={<Payment />}></Route>
             <Route path="/ropaHombre" element={<RopaHombre />}></Route>
+            <Route path="/HeaderCelu" element={<HeaderCelu />}></Route>
           </Routes>
         </Layout>
       </Router>

@@ -15,14 +15,14 @@ nav {
   text-decoration: none;
   font-family: Arial;
   margin: 10px;
-  font-size: 25px;
+  font-size: 1rem;
   color: darkslategrey;
   font-weight: bold;
 }
 .menu {
   position: absolute;
-  right: 10px;
-  // display: none;
+  right: 0px;
+  display: none;
 }
 .navbar-right li {
   display: flex;
@@ -45,6 +45,7 @@ nav {
 
   width: 30px;
 }
+
 @media (max-width: 640px) {
   .menu {
     display: block;
@@ -66,6 +67,6 @@ nav {
   nav {
     height: 50px;
     width: 1000px;
-    background-color: aquamarine;
+    // background-color: aquamarine;
   }
 }

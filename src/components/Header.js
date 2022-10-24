@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import icmenu from "../assets/img/icon_menu.svg";
 // import logo from "../assets/img/logo.jpg";
@@ -9,17 +9,30 @@ import { HeaderCelu } from "./HeaderCelu";
 const Header = () => {
   const { state } = useContext(AppContext);
   const { cart } = state;
+  const [show, setShow] = useState(true);
+  const showComponent = () => {
+    console.log("hola...mundo...");
+    if (show === true) {
+      setShow(false);
+    } else {
+      setShow(true);
+    }
+  };
   return (
     <>
       <nav className="container">
-        {/* <img src={logo} alt="logo" className="" /> */}
         <div className=" navbar-left">
-          <img src={icmenu} alt="menu" className="menu" />
+          <img
+            src={icmenu}
+            alt="menu"
+            onClick={showComponent}
+            className="menu"
+          />
           <ul>
             <Link to="/home">Todo</Link>
             <Link to="/ropaHombre">Ropa</Link>
             <Link to="/ace">Acesorios</Link>
-            <Link to="/no">Calzados</Link>
+            <Link to="/home">Calzados</Link>
             <Link to="/createAccount">Reloj</Link>
             <Link to="/cv">Muebles</Link>
             <Link to="/login">Comida</Link>
@@ -28,7 +41,6 @@ const Header = () => {
 
         <div className="navbar-right">
           <ul>
-            {/* <p className="navbar-email">iniciar section</p> */}
             <li className="navbar-shopping-cart">
               <Link to="/checkout">
                 <i className="fas fa-shopping-basket" />
@@ -39,11 +51,9 @@ const Header = () => {
             </li>
           </ul>
         </div>
-
-        {/* {toggle && <Menu />} */}
-        {/* {toggleOrders && <MyOrder />} */}
       </nav>
-      <HeaderCelu />
+
+      {show ? <HeaderCelu /> : true}
     </>
   );
 };
