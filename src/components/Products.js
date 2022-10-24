@@ -7,7 +7,6 @@ const Products = () => {
   const { products } = state;
   const handleAddToCart = (Product) => () => {
     addTocart(Product);
-    console.log("hola mundo");
   };
   return (
     <div className="product-item ">

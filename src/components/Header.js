@@ -11,7 +11,6 @@ const Header = () => {
   const { cart } = state;
   const [show, setShow] = useState(true);
   const showComponent = () => {
-    console.log("hola...mundo...");
     if (show === true) {
       setShow(false);
     } else {
@@ -53,7 +52,7 @@ const Header = () => {
         </div>
       </nav>
 
-      {show ? <HeaderCelu /> : true}
+      {!show ? <HeaderCelu /> : ""}
     </>
   );
 };
