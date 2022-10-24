@@ -5,7 +5,6 @@ nav {
   align-items: center;
   justify-content: center;
   height: 80px;
-  border: 1px solid #cccc;
 }
 .navbar-left ul {
   display: flex;
@@ -36,10 +35,7 @@ nav {
   background-color: aliceblue;
   color: rgb(64, 73, 68);
 }
-.nav-logo {
-  // width: 100px;
-  // height: 60px;
-}
+
 .navbar-shopping-cart {
   position: relative;
 

@@ -4,14 +4,13 @@
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-  border: solid 2px rgb(32, 209, 117);
+  border: solid 1px #198754;
 }
 
 .produc1 {
   display: grid;
   justify-content: center;
   align-items: center;
-  width: 400px;
   padding: 10px;
 }
 
@@ -27,6 +26,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  // border: solid 2px rgb(32, 209, 117);
 }
 @media (max-width: 640px) {
   .gridItem {
@@ -34,18 +34,18 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
+
   .navbar-left ul {
     display: none;
   }
 
   .cardProduc {
     position: relative;
-    width: 90%;
+    width: 100%;
   }
   .cardProduc p {
     font-size: 15px;
     margin: 20px;
-    // text-align: center;
   }
   .cardProduc button {
     width: 150px;

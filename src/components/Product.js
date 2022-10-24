@@ -1,8 +1,8 @@
-import react from "react";
+import React from "react";
 import "../assets/scss/Products.scss";
 const Product = ({ product, handleAddToCart }) => {
   return (
-    <div className="container cardProduc">
+    <div className="container cardProduc card">
       <div className="produc2">
         <div className="container produc1 text-center ">
           <img src={product.image} alt={product.title} />

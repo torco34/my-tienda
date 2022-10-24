@@ -7,7 +7,7 @@ const Home = () => {
     <>
       <div className="container saber">
         <div className="row">
-          <div className="col-3">
+          <div className="">
             <Products products={inicialstaste.products} />
           </div>
         </div>
